@@ -20,6 +20,8 @@ class Auto {
         this.registro = reg;
     }
 
+    public Auto(){}
+
     int cantidad; //variable usada
     public int cantidadAsientos() {
         for (Asiento asiento : asientos) {
@@ -58,6 +60,8 @@ class Asiento {
         this.registro = registro;
     }
 
+    public Asiento(){}
+
     public void cambiarColor(String color){
         String[] permitidos = {"rojo", "verde", "amarillo", "negro", "blanco"};
         if(Arrays.asList(permitidos).contains(color)){
@@ -76,6 +80,8 @@ class Motor {
         this.tipo = tipo;
         this.registro = registro;
     }
+
+    public Motor(){}
 
     public void cambiarRegistro(int registro){
         this.registro = registro;
